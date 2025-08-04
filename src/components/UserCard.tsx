@@ -193,7 +193,7 @@ const UserCard = () => {
                     className="mt-6 flex flex-row gap-6"
                     variants={itemVariants}
                 >
-                    <Link name="GitHub" url="https://github.com/prettylittlelies" icon={SiGithub} />
+                    <Link name="GitHub" url="https://github.com/upblowing" icon={SiGithub} />
                     <Link name="Telegram" url="https://t.me/femboykitten" icon={SiTelegram} />
                 </motion.div>
             </motion.div>
