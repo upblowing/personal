@@ -14,7 +14,7 @@ export const metadata: Metadata = { // the original source is from https://githu
   description: "Personal portfolio and presence page",
   keywords: ["portfolio", "developer", "fullstack", "discord", "presence"],
   authors: [{ name: "opium.college" }],
-  viewport: "width=device-width, initial-scale=1",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
   themeColor: "#ffffff",
   colorScheme: "dark"
 };
@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={`${poppins.className} antialiased`}>{children}</body>
     </html>
   );
 }

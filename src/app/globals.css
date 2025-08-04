@@ -5,6 +5,7 @@
 body {
 	color: #fff;
 	overflow-x: hidden;
+	min-height: 100vh;
 }
 
 @layer utilities {
@@ -36,4 +37,17 @@ html {
 
 * {
 	transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Responsive improvements */
+@media (max-width: 640px) {
+	body {
+		font-size: 14px;
+	}
+}
+
+/* Ensure images scale properly */
+img {
+	max-width: 100%;
+	height: auto;
 }

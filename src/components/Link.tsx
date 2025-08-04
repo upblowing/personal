@@ -17,7 +17,7 @@ export default function Link({ name, url, icon }: LinkProps) {
     
     return (
        <motion.a 
-            className="flex justify-between items-center gap-4 w-36 bg-transparent rounded-xl cursor-pointer" 
+            className="flex justify-between items-center gap-2 sm:gap-4 w-full sm:w-36 bg-transparent rounded-xl cursor-pointer" 
             href={url}
             target="_blank"
             rel="noopener noreferrer"
@@ -32,14 +32,14 @@ export default function Link({ name, url, icon }: LinkProps) {
             transition={{ duration: 0.4, ease: "easeOut" }}
         >
             <div className="flex justify-start items-center gap-2">
-                {icon({ className: "h-6 w-6" })}
-                <p>{name}</p>
+                {icon({ className: "h-5 w-5 sm:h-6 sm:w-6" })}
+                <p className="text-sm sm:text-base">{name}</p>
             </div>
             <motion.div
                 whileHover={{ rotate: 15 }}
                 transition={{ duration: 0.2 }}
             >
-                <FaExternalLinkAlt className="h-3 w-3"/>
+                <FaExternalLinkAlt className="h-2.5 w-2.5 sm:h-3 sm:w-3"/>
             </motion.div>
        </motion.a>
     )

@@ -12,7 +12,7 @@ export default function Icon({ name, icon }: IconProps) {
     
     return (
         <motion.div 
-            className="relative flex flex-col items-center justify-center cursor-pointer w-8 h-8"
+            className="relative flex flex-col items-center justify-center cursor-pointer w-6 h-6 sm:w-8 sm:h-8"
             whileHover={{ 
                 scale: 1.1,
                 y: -2,
@@ -23,7 +23,7 @@ export default function Icon({ name, icon }: IconProps) {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
         >
-            {icon({ className: "h-6 w-6" })}
+            {icon({ className: "h-4 w-4 sm:h-6 sm:w-6" })}
         </motion.div>
     )
 }
