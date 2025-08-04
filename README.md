@@ -1,6 +1,7 @@
 # my personal site that i dont use rn
+###  not plalning to so feel free to use this source
 
-[live demo](place this later)
+[live demo](https://lcian.netlify.app/)
 
 ![x](https://jpeg.lat/image/BceMF7y6ml.png)
 
